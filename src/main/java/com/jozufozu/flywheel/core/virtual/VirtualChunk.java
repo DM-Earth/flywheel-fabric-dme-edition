@@ -31,25 +31,20 @@ import net.minecraft.world.ticks.BlackholeTickAccess;
 import net.minecraft.world.ticks.TickContainerAccess;
 
 public class VirtualChunk extends ChunkAccess {
+	public final VirtualRenderWorld world;
 
-	final VirtualRenderWorld world;
-	boolean needsLight;
-	final int x;
-	final int z;
+	private final VirtualChunkSection[] sections;
 
-	private final LevelChunkSection[] sections;
+	private boolean needsLight;
 
 	public VirtualChunk(VirtualRenderWorld world, int x, int z) {
 		super(new ChunkPos(x, z), UpgradeData.EMPTY, world, world.registryAccess()
 			.registryOrThrow(Registries.BIOME), 0L, null, null);
 
 		this.world = world;
-		this.needsLight = true;
-		this.x = x;
-		this.z = z;
 
 		int sectionCount = world.getSectionsCount();
-		this.sections = new LevelChunkSection[sectionCount];
+		this.sections = new VirtualChunkSection[sectionCount];
 
 		for (int i = 0; i < sectionCount; i++) {
 			sections[i] = new VirtualChunkSection(this, i << 4);
@@ -73,10 +68,10 @@ public class VirtualChunk extends ChunkAccess {
 	}
 
 	@Override
-	public void setBlockEntity(BlockEntity p_177426_2_) {}
+	public void setBlockEntity(BlockEntity entity) {}
 
 	@Override
-	public void addEntity(Entity p_76612_1_) {}
+	public void addEntity(Entity entity) {}
 
 	@Override
 	public Set<BlockPos> getBlockEntitiesPos() {
@@ -89,10 +84,10 @@ public class VirtualChunk extends ChunkAccess {
 	}
 
 	@Override
-	public void setHeightmap(Heightmap.Types p_201607_1_, long[] p_201607_2_) {}
+	public void setHeightmap(Heightmap.Types types, long[] p_201607_2_) {}
 
 	@Override
-	public Heightmap getOrCreateHeightmapUnprimed(Heightmap.Types p_217303_1_) {
+	public Heightmap getOrCreateHeightmapUnprimed(Heightmap.Types types) {
 		return null;
 	}
 

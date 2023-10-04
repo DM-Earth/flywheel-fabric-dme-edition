@@ -31,7 +31,7 @@ public class VirtualChunkSource extends ChunkSource {
 	}
 
 	@Override
-	public ChunkAccess getChunk(int x, int z, ChunkStatus status, boolean p_212849_4_) {
+	public ChunkAccess getChunk(int x, int z, ChunkStatus status, boolean load) {
 		return getChunk(x, z);
 	}
 
@@ -52,7 +52,7 @@ public class VirtualChunkSource extends ChunkSource {
 	}
 
 	@Override
-	public void tick(BooleanSupplier p_202162_, boolean p_202163_) {
+	public void tick(BooleanSupplier hasTimeLeft, boolean tickChunks) {
 	}
 
 	@Override

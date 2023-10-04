@@ -31,8 +31,7 @@ public class VirtualChunkSection extends LevelChunkSection {
 	}
 
 	@Override
-	public BlockState setBlockState(int p_177484_1_, int p_177484_2_, int p_177484_3_, BlockState p_177484_4_,
-		boolean p_177484_5_) {
+	public BlockState setBlockState(int x, int y, int z, BlockState state, boolean useLock) {
 		throw new IllegalStateException("Chunk sections should not be mutated in a fake world.");
 	}
 }

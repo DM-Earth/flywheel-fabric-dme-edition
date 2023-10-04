@@ -3,16 +3,18 @@
   "id": "flywheel",
   "version": "${version}",
 
-  "name": "Flywheel",
+  "name": "Flywheel Unofficial",
   "description": "A modern engine for modded minecraft.",
   "authors": [
     "Jozufozu",
-    "Pepper_Bell"
+    "Pepper_Bell",
+    "TexTrue",
+    "KessokuTeaTime"
   ],
   "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/flywheel",
-    "issues": "https://github.com/Jozufozu/Flywheel/issues",
-    "sources": "https://github.com/Jozufozu/Flywheel"
+    "homepage": "https://github.com/KessokuTeaTime/flywheel-fabric",
+    "issues": "https://github.com/KessokuTeaTime/flywheel-fabric/issues",
+    "sources": "https://github.com/KessokuTeaTime/flywheel-fabric"
   },
 
   "license": "MIT",
