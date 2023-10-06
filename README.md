@@ -1,6 +1,6 @@
 <div align="center">
 <img src="https://i.imgur.com/yVFgPpr.png" alt="Logo by @voxel_dani on Twitter" width="250">
-<h1>Flywheel Fabric Unofficial</h1>
+<h1>Flywheel Fabric DM-Earth Edition</h1>
 <h6>A modern engine for modded Minecraft.</h6>
 <br>
 </div>
@@ -43,9 +43,9 @@ repositories {
 }
 
 dependencies {
-    modImplementation "com.jozufozu.flywheel:Flywheel-Fabric:${flywheel_version}"
+    modImplementation "com.github.DM-Earth:flywheel-fabric-dme-edition:${flywheel_version}"
 }
 ```
 `${flywheel_version}` gets replaced by the version of Flywheel you want to use, eg. `1.18-0.3.0.3`
 
-For a list of available Flywheel versions, you can check [the maven](https://maven.tterrag.com/com/jozufozu/flywheel/Flywheel-Fabric/).
+For a list of available Flywheel versions, you can check the releases.
