@@ -90,7 +90,7 @@ javadoc {
 }
 
 jar {
-    from("LICENSE.md") {
+    from("LICENSE") {
         rename { "${it}_$archivesBaseName" }
     }
 }
@@ -99,14 +99,6 @@ java {
     withSourcesJar()
     withJavadocJar()
 }
-
-void addLicense(jarTask) {
-    jarTask.from('LICENSE.md') {
-        rename '(.*)\\.(.*)', '$1_' + archivesBaseName + '.$2'
-    }
-}
-
-addLicense(jar)
 
 publishing {
     publications {
