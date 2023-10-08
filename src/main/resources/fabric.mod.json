@@ -3,16 +3,17 @@
   "id": "flywheel",
   "version": "${version}",
 
-  "name": "Flywheel",
+  "name": "Flywheel Fabric DM-Earth Edition",
   "description": "A modern engine for modded minecraft.",
   "authors": [
     "Jozufozu",
-    "Pepper_Bell"
+    "Pepper_Bell",
+    "TexTrue",
+    "DM-Earth"
   ],
   "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/flywheel",
-    "issues": "https://github.com/Jozufozu/Flywheel/issues",
-    "sources": "https://github.com/Jozufozu/Flywheel"
+    "issues": "https://github.com/DM-Earth/flywheel-fabric-dme-edition/issues",
+    "sources": "https://github.com/DM-Earth/flywheel-fabric-dme-edition"
   },
 
   "license": "MIT",
@@ -31,8 +32,8 @@
   ],
 
   "depends": {
-    "fabricloader": ">=0.11.3",
-    "fabric": ">=0.84.0",
+    "fabricloader": "*",
+    "fabric": "*",
     "minecraft": ">=1.20.1",
     "java": ">=17"
   }
