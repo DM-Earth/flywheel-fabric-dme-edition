@@ -2,7 +2,7 @@
 <img src="https://i.imgur.com/yVFgPpr.png" alt="Logo by @voxel_dani on Twitter" width="250">
 <h1>Flywheel Fabric DM-Earth Edition</h1>
 <h6>A modern engine for modded Minecraft.</h6>
-<a href='https://ci.tterrag.com/job/Flywheel/job/Fabric/job/1.18/'><img src='https://ci.tterrag.com/job/Flywheel/job/Fabric/job/1.18/badge/icon' alt="Jenkins"></a>
+<a href='https://jitpack.io/#DM-Earth/flywheel-fabric-dme-edition'><img src='https://jitpack.io/v/DM-Earth/flywheel-fabric-dme-edition.svg' alt="Jitpack"></a>
 <a href="https://discord.gg/sHUtFBxVdj"><img src="https://img.shields.io/discord/841464837406195712?color=5865f2&label=Discord&style=flat" alt="Discord"></a>
 <br>
 </div>
