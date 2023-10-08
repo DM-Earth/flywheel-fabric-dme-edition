@@ -1,4 +1,4 @@
-package com.jozufozu.flywheel.fabric.mixin.sodium;
+package com.jozufozu.flywheel.mixin.sodium;
 
 import net.fabricmc.loader.api.FabricLoader;
 import org.objectweb.asm.tree.ClassNode;
@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Set;
 
 public class SodiumMixinPlugin implements IMixinConfigPlugin {
+
 	@Override
 	public void onLoad(String mixinPackage) {
 	}
