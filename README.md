@@ -39,15 +39,14 @@ Add the following repo and dependency to your `build.gradle`:
 ```groovy
 repositories {
     maven {
-        name "tterrag maven"
-        url "https://maven.tterrag.com/"
+        url "https://jitpack.io"
     }
 }
 
 dependencies {
-    modImplementation "com.jozufozu.flywheel:Flywheel-Fabric:${flywheel_version}"
+    modImplementation "com.github.DM-Earth:flywheel-fabric-dme-edition:${flywheel_version}"
 }
 ```
-`${flywheel_version}` gets replaced by the version of Flywheel you want to use, eg. `1.18-0.3.0.3`
+`${flywheel_version}` gets replaced by the version of Flywheel you want to use, eg. `0.6.10-1.20.1`
 
-For a list of available Flywheel versions, you can check [the maven](https://maven.tterrag.com/com/jozufozu/flywheel/Flywheel-Fabric/).
+For a list of available Flywheel versions, you can check [the maven](https://jitpack.io/#DM-Earth/flywheel-fabric-dme-edition).
